@@ -3,7 +3,11 @@ GET http://localhost:3000
 ###
 
 POST http://localhost:3000/auth/register
+Content-Type: application/json
 
+{
+    "password": "1234"
+}
 ###
 
 POST http://localhost:3000/auth/login
