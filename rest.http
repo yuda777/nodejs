@@ -1,21 +1,32 @@
 GET http://localhost:3000
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDYxNjYwMjAsImV4cCI6MTYwNjE2NjAzNSwiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.BfUXQZOr4mTGzV0J7iuQbRIl7wiIGOf0TU5er7YfqhI
 ###
 
 POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email": "hendri5@abc.com",
+    "email": "hendri10@abc.com",
     "password": "1234"
 }
 ###
 
 POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "hendri4@abc.com",
+    "password": "1234"
+}
 
 ###
 
 POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDYxNjU4MjcsImV4cCI6MTYzNzcyMzQyNywiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.-ZT5j-D-I-JFLlWB6eFpbtfwem_cIIAhmKhP0Az9WhY"
+}
 
 ###
 
