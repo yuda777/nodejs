@@ -6,7 +6,7 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email": "hendri10@abc.com",
+    "email": "hendri11@abc.com",
     "password": "1234"
 }
 ###
@@ -25,9 +25,14 @@ POST http://localhost:3000/auth/refresh-token
 Content-Type: application/json
 
 {
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDYxNjU4MjcsImV4cCI6MTYzNzcyMzQyNywiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.-ZT5j-D-I-JFLlWB6eFpbtfwem_cIIAhmKhP0Az9WhY"
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDY0MTEwNjIsImV4cCI6MTYwNjQxMTA5MiwiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.LJFeEyTUhbqelAHoQEaw57wiLLxZlFIAPYn_wey9Qr8"
 }
 
 ###
 
 DELETE http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDY1NDQ5NzQsImV4cCI6MTYzODEwMjU3NCwiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.KxbchnzKiEw7W-QVrOS3u86i9qsv2EVLFG-Q_vcQBvI"
+}
