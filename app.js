@@ -5,6 +5,9 @@ require('dotenv').config()
 require('./helpers/init_mongodb')
 const { verifyAccessToken } = require('./helpers/jwt_helper')
 const client = require('./helpers/init_redis')
+const Age = require('./Models/Age.model')
+const Item = require('./Models/Item.model')
+const User = require('./Models/User.model')
 
 
 const AuthRoute = require('./Route/Auth.route')
@@ -15,10 +18,21 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 
+
+
 app.use('/auth', AuthRoute)
 
 app.get('/', verifyAccessToken, async(req, res, next) => {
-    res.send('Hello from express.')
+    Age.find({}).exec(function(err, response) {
+        // const { ps } = response
+        console.log(response)
+        if (!err) {
+            res.send({"users":response})
+        } else {
+            console.log(err)
+        };
+    });
+    
 })
 
 app.use(async(req, res, next) => {

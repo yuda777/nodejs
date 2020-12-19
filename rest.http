@@ -1,21 +1,21 @@
 GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDYxNjYwMjAsImV4cCI6MTYwNjE2NjAzNSwiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.BfUXQZOr4mTGzV0J7iuQbRIl7wiIGOf0TU5er7YfqhI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDgzNTE4OTAsImV4cCI6MTYwODYxMTA5MCwiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.4mJcZt-sgPTdVk4PMXNNc8RzENg3x6BuEmMh0lJ3Rn0
 ###
 
 POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email": "hendri11@abc.com",
+    "username": "hendri11@abc.com",
     "password": "1234"
 }
 ###
 
-POST http://localhost:3000/auth/login
+POST http://192.168.0.113:3000/auth/login
 Content-Type: application/json
 
 {
-    "email": "hendri4@abc.com",
+    "username": "hendri4@abc.com",
     "password": "1234"
 }
 
