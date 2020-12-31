@@ -1,13 +1,13 @@
 GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDgzNTE4OTAsImV4cCI6MTYwODYxMTA5MCwiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.4mJcZt-sgPTdVk4PMXNNc8RzENg3x6BuEmMh0lJ3Rn0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDkyNTMyNTYsImV4cCI6MTYwOTI1MzI3NiwiYXVkIjoiNWZlMDVhYzA0NjAxOGQyYWVjMmQzMGJlIiwiaXNzIjoieXVkYWhlbmRyaSJ9.D0JTHmK8l_4ne4hVxltpOZyqe1Ksvvj3JVfoqjzH3MI
 ###
 
 POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "username": "hendri11@abc.com",
-    "password": "1234"
+    "username": "2",
+    "password": "1"
 }
 ###
 
@@ -15,8 +15,8 @@ POST http://192.168.0.113:3000/auth/login
 Content-Type: application/json
 
 {
-    "username": "hendri4@abc.com",
-    "password": "1234"
+    "username": "1",
+    "password": "1"
 }
 
 ###
@@ -34,5 +34,5 @@ DELETE http://localhost:3000/auth/logout
 Content-Type: application/json
 
 {
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDY1NDQ5NzQsImV4cCI6MTYzODEwMjU3NCwiYXVkIjoiNWZiNTVhYmZhODExMGMzYjU0MzMwYmEwIiwiaXNzIjoicGlja3VwdXJwYWdlLmNvbSJ9.KxbchnzKiEw7W-QVrOS3u86i9qsv2EVLFG-Q_vcQBvI"
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDkyNTMzMjAsImV4cCI6MTY0MDgxMDkyMCwiYXVkIjoiNWZlMDVhYzA0NjAxOGQyYWVjMmQzMGJlIiwiaXNzIjoieXVkYWhlbmRyaSJ9.dx6E5e_38iQY1EkSDTnW5JjeXLvcw5P1JqAjOjtLRCU"
 }
